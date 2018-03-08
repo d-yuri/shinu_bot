@@ -1,11 +1,11 @@
 <?php
 $data = json_decode(file_get_contents('php://input'), true);
-$token = '567179149:AAFwA-kbvtgxusDFVqNoEEhJF_gRUkdcEoo';
+$token = '504136360:AAE0LwahwnnNBUZ6lqd-CvJFdEjiaLze2ls';
 
 
 $ch = curl_init();
 
-curl_setopt($ch, CURLOPT_URL,"http://vk-sender.tk/telega.php");
+curl_setopt($ch, CURLOPT_URL,"http://vk-send.tk/telegram-shinu/telega.php");
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS,http_build_query($data));
 
